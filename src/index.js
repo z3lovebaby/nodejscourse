@@ -15,7 +15,7 @@ app.use(express.json())
 //http logger
 app.use(morgan('combined'))
 //template engine
-app.engine('hbs', hbs.engine({ extname: '.hbs' }));
+                app.engine('hbs', hbs.engine({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
 //set path
 app.set('views', path.join(__dirname, 'resources/views'));
